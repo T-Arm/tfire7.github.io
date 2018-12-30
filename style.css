@@ -7,15 +7,17 @@ html {
 }
 
 h1{	
-	 font-size: 120px;
 	text-align: center;
     font-family: 'Ubuntu', sans-serif;
+    font-size: 120px;
     text-transform: uppercase;
     color: white;
     margin: 5px 0px 0px 0px;
 }
-.clear{
-	text-align:center !important;
+
+
+.click {
+	text-align: center !important; 
 }
 .more{	
 	text-align: center;
@@ -35,3 +37,4 @@ h1{
 	cursor: pointer;
 	transform: scale(1.1);
 }
+
