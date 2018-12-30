@@ -14,10 +14,12 @@ h1{
     color: white;
     margin: 5px 0px 0px 0px;
 }
-.click{
-	text-align: center !important;
+#mc_embed_signup form {
+    display: block;
+    position: relative;
+    /* text-align: left; */
+    padding: 10px 0 10px 3%;
 }
-
 .more{	
 	text-align: center;
 	font-family: 'Ubuntu Condensed', sans-serif;
