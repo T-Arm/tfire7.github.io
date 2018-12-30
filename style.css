@@ -9,16 +9,13 @@ html {
 h1{	
 	text-align: center;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 320px;
+    font-size: 120px;
     text-transform: uppercase;
     color: white;
     margin: 5px 0px 0px 0px;
 }
-#mc_embeded_signup form {
-    display: block;
-    position: relative;
-    text-align: center; 
-    padding: 10px 0 10px 3%;
+.click{
+	text-align:center !important;
 }
 .more{	
 	text-align: center;
