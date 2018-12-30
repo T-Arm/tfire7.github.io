@@ -7,6 +7,7 @@ html {
 }
 
 h1{	
+	 font-size: 120px;
 	text-align: center;
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
