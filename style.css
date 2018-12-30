@@ -15,10 +15,10 @@ h1{
     margin: 5px 0px 0px 0px;
 }
 
-#click {
-    text-align: center !important;
-}
 
+.click {
+	text-align: center !important; 
+}
 .more{	
 	text-align: center;
 	font-family: 'Ubuntu Condensed', sans-serif;
@@ -37,4 +37,3 @@ h1{
 	cursor: pointer;
 	transform: scale(1.1);
 }
-
