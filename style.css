@@ -1,134 +1,235 @@
-body{
-    margin: auto 0;
+body {
+    background: #f1f1f1;
+    padding-top: 70px;
+    padding-right: 40px;
 }
 
-.zone {
-    display: grid;
-    cursor:pointer;
-    color:#FFF;
-    font-size:25px;
-    border-radius:4px;
-    border:1px solid #bbb;
-    transition: all 0.3s linear;
-}
-
-.zone:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-}
-
-/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
-/***********************************************************************
- *  Green Background
- **********************************************************************/
-.green{
-    background: #56B870; /* Old browsers */
-    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
-    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
-}
-.stick{
+header {
+    width: 100%;
+    height: 56px;
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0;
+    padding: 15px;
+    z-index: 5;
+    background: #319146;
+    box-shadow: 0 2px 4px rgba(49, 145, 70, .2);
 }
 
-.heads{
-    display: flex;
-    flex-wrap: wrap;
+header input {
+    width: calc(100% - 90px);
+    height: 50px;
+    float: left;
+    background: rgba(255, 255, 255, .4);
+    border-radius: 5px;
+    border: 0;
+    text-indent: 16px;
+    padding: 0 60px 0 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; 
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: none;
+    outline: none;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
 }
-@media only screen and (max-width: 500px) {
-    .heads{
-        padding: 0px;
+
+header button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    right: 45px;
+    z-index: 2;
+    border-radius: 25px;
+    border: 0;
+    outline: 0;
+    background: white;
+}
+
+.pluss {
+    position: relative;
+    bottom: 2px;
+    left: 7px;
+    width: 24px;
+    height: 4px;
+    background-color: #319146;
+    border-radius: 2px;
+}
+
+    .vertical {
+        transform: rotate(90deg);
     }
-}
-a{
-    text-decoration: none;
-    color: white;
-}
-li{
-    list-style: none;
-    padding: 0px 10px;
-}
-.push{    ;
-    margin-left: auto;
-} 
 
-/***********************************************************************
- *  Red Background
- **********************************************************************/
-.red{
-    background: #C655BE; /* Old browsers */
-    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
-    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
-}
+    .horizontal {
+        top: 2px;
+    }
 
-.contaner{
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-
-}
-
-.coverimg{
-    width: 30rem;
-} 
-/***********************************************************************
- *  Blue Background
- **********************************************************************/
-.blue{
-    background: #7abcff; /* Old browsers */
-    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
-    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
-}
-
-.grid-wrapper{
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
-
-.box> img{
+.container {
     width: 100%;
+    float: left;
 }
 
-.box{
-    background-color: #555;
-    padding: 100px;
-    margin: 15px; 
-
-}
-/***********************************************************************
- *  Yellow Background
- **********************************************************************/
-.yellow{
-    background: #F3AAAA; /* Old browsers */
-    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
-    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+ul.todo {
+    width: 100%;
+    float: left;
 }
 
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0px;
+ul.todo li {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    float: left;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(100, 100, 100, .4);
+    margin-bottom: 10px;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #444;
+    line-height: 30px;
+    padding: 16px 0px 0px 16px;
+}
+    ul.todo li:last-of-type {
+        margin: 0;
+    }
+
+ul.todo li .liButtons { 
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 0;
+    right: 0;
+} 
+
+ul.todo li .liButtons button {
+    top: 8px;
+    right: 8px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    float: left;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: white;
+    appearance: none;
+}
+    ul.todo li .liButtons button:hover {
+    background: #eee;
+    }
+
+    ul.todo li .liButtons button:last-of-type:before{
+    content: "";
+    width: 1px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: #d7d7d7;
+    }
+
+
+.remove {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.x {
+    position: relative;
+    left: 5px;
+    width: 30px;
+    height: 3px;
+    border-radius: 6px;
+    background: #F60022;
+}
+    .x1 {
+        transform: rotate(45deg);
+        top: 3px;
+    }
+    .x2 {
+        transform: rotate(-45deg)
+    }
+
+.complete {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
+.check {
+    position: absolute;
+    height: 3px;
+    border-radius: 6px;
+    background: #319146;
+}
+    .big {
+        transform: rotate(-45deg);
+        width: 30px;
+        left: 12px;
+    }
+    .small {
+        transform: rotate(45deg);
+        width: 10px;
+        top: 31px;
+        right: 31px;
+    }
+
+
+#todo {
+    
+    margin-top: 15px;
+    padding: 15px;
+}
+
+#done {
+    margin-top: 15px;
+    padding: 15px;
+}
+
+#done li {
+    background: rgba(80, 236, 164, 0.555)
+}
+
+#done li .liButtons button {
+    background: rgba(80, 236, 164, 0.001)
+}
+
+#done li .liButtons button:hover{
+    background: rgba(80, 236, 163, 0.747)
+}
+
+#done li .liButtons button .check {
+    background-color: red
+}
+
+#done li .liButtons button .x {
+    background-color: green
+}
+
+#done li .liButtons button:last-of-type:before {
+    background: rgb(33, 197, 115);
+}
+
+#todo:empty::after {
+    content: 'You have nothing to do!';
+    margin-top: 15px;
+}
+
+#done:empty::after {
+    content: 'You have finished and tasks';
+}
+
+#todo::after,
+#done::after {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+}
