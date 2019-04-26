@@ -1,5 +1,5 @@
-let plussbutton = document.getElementById("addTask");
 let removeBtns = document.getElementsByClassName('remove')
+let plussbutton = document.getElementById("addTask");
 let notDoneList = document.getElementById("todo")
 let completeBtn = document.getElementsByClassName('check')
 let userinput = document.getElementById("input");
